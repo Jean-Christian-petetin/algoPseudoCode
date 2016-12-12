@@ -1,0 +1,31 @@
+var tableau {250, 10, 12, 5, 24, 3542, 50}
+var i = 0;
+var longeurDuTableau = tableau.lenght;
+
+TANT QUE i < longueurDuTableau
+	TANT QUE tableau[i] < tableau[i-1]
+		 tableau[i] = tableau[i-1]
+		tableau[i--]
+	fin
+iiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiii
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fin
+
+
+
+//correction.
+
+var flag= false; 
+i = 1;
+TANT QUE flag == false 
+	si tableau[i+1]<tableau[i]
+
+alors
+	var valMin = tableau[i+1];
+	tableau[i+1] = tableau[i];
+	tableau[i] = valMin;
+	flag = false;
+SINON
+	flag = true;
+fin TANT QUE
