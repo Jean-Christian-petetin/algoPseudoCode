@@ -29,3 +29,34 @@ alors
 SINON
 	flag = true;
 fin TANT QUE
+
+
+
+EXO Age.
+12/12/2016
+28/10/1979
+
+var actualYear
+var actualMonth
+var actualDay
+
+var birthYear
+var birthMonth
+var birthDay
+
+var age = actualYear - birthYear;
+
+SI actualMonth < birthMonth
+	ALORS 
+		age = ageYears -1;
+
+SI actualMonth < birthMonth
+	ALORS 
+		age = age -1;
+SINON SI actualMonth == birthMonth
+	ALORS
+		SI actualDay < BirthDay
+			ALORS
+				age = age -1;
+	FIN SI
+FIN SI
